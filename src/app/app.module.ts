@@ -13,9 +13,10 @@ import {AboutComponent} from "./about/about.component";
 import {ContactComponent} from "./contact/contact.component";
 import {ToursComponent} from "./tours/tours.component";
 import {HomeComponent} from "./home/home.component";
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {PageNotFoundModule} from "./page-not-found/page-not-found.module";
 import {JsonReaderService} from "./shared/json-reader.service";
+import {RssInfoModule} from "./rss-info/rss-info.module";
 
 const appRoutes: Routes = [
   {
@@ -37,7 +38,7 @@ const appRoutes: Routes = [
   imports: [
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      {enableTracing: true} // <-- debugging purposes only
     ),
     BrowserModule,
     FormsModule,
@@ -46,6 +47,7 @@ const appRoutes: Routes = [
     ToursModule,
     ContactModule,
     AboutModule,
+    RssInfoModule,
     PageNotFoundModule
   ],
   providers: [
