@@ -15,6 +15,7 @@ import {ToursComponent} from "./tours/tours.component";
 import {HomeComponent} from "./home/home.component";
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {PageNotFoundModule} from "./page-not-found/page-not-found.module";
+import {JsonReaderService} from "./shared/json-reader.service";
 
 const appRoutes: Routes = [
   {
@@ -47,7 +48,9 @@ const appRoutes: Routes = [
     AboutModule,
     PageNotFoundModule
   ],
-  providers: [],
+  providers: [
+    JsonReaderService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

@@ -9,6 +9,8 @@ declare var $: any;
 })
 export class HomeComponent implements OnInit {
 
+  cityText: string;
+
   constructor() { }
 
   ngOnInit() {
@@ -17,6 +19,8 @@ export class HomeComponent implements OnInit {
     $('.flexslider').flexslider({
       controlNav: false
     });
+
+    this.cityText = "Sample text for selected city";
   }
 
 }

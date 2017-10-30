@@ -248,7 +248,7 @@ body { overflow-x: hidden; }
 	height: 52px;
 }
 #hotelCarTabs li {
-	width: 50%;
+/*	width: 50%;*/
 	height: 100%;
 }
 #hotelCarTabs > li > a {
